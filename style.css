@@ -1,0 +1,65 @@
+.header {
+	padding-top:25px;
+	text-align:center;
+	color:black;
+	transition: color 1s;
+	height:50px;
+	padding-bottom:25px;
+}
+
+.image {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+body {
+	border:0;
+	margin:0;
+	padding:0;
+	background-color:grey;
+}
+
+.header, .sidenav {
+  	background: linear-gradient(230deg, orange, orangered);
+	background-size: 1000% 1000%;
+
+	-webkit-animation: Colorshift 29s ease infinite;
+	-moz-animation: Colorshift 29s ease infinite;
+	animation: Colorshift 29s ease infinite;
+}
+
+@-webkit-keyframes Colorshift {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@-moz-keyframes Colorshift {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+
+.sidenav-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;;
+}
+
+.sidenav-nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+	transition: background-color 0.75s;
+}
+
+.sidenav-nav li a:hover {
+    background-color: #e62e00;
+    color: white;
+}
+
+.content {
+	text-align:center
+}
